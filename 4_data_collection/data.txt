@@ -1,1 +1,30 @@
+KidSafe CMS Data Collection Description
 
+The KidSafe CMS system stores information necessary to manage content and monitor usage.
+
+Data Types Stored
+
+User Accounts
+• Username
+• Password
+• User role (adult or child)
+
+Child Profiles
+• Child name
+• Age group
+• Parent account reference
+
+Content Library
+• Content title
+• Description
+• Content type
+• URL or file
+• Approval status
+
+Activity Logs
+• Child user
+• Content accessed
+• Timestamp
+• Duration of interaction
+
+The system uses PostgreSQL as the database management system.
