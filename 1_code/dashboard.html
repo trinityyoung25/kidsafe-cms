@@ -1,0 +1,13 @@
+<h1>KidSafe CMS Dashboard</h1>
+
+<a href="/upload/">Upload Content</a>
+
+<h2>Content Library</h2>
+
+{% for item in content %}
+<div>
+<h3>{{ item.title }}</h3>
+<p>{{ item.description }}</p>
+<p>Approved: {{ item.approved }}</p>
+</div>
+{% endfor %}

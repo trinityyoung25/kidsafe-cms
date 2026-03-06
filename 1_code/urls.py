@@ -1,8 +1,7 @@
-from django.urls import path
-from . import views
+from django.contrib import admin
+from django.urls import path, include
 
 urlpatterns = [
-    path("", views.dashboard, name="dashboard"),
-    path("upload/", views.upload_content, name="upload"),
-    path("library/", views.child_library, name="library"),
+    path('admin/', admin.site.urls),
+    path('', include('cms.urls')),
 ]
